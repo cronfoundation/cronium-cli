@@ -810,7 +810,7 @@ namespace Neo.Shell
         private bool OnShowPoolCommand(string[] args)
         {
             bool verbose = args.Length >= 3 && args[2] == "verbose";
-            Transaction[] transactions = Blockchain.Singleton.GetMemoryPool().ToArray();
+            Transaction[] transactions = Blockchain.Singleton.MemPool.GetVerifiedTransactions().ToArray();
             if (verbose)
                 foreach (Transaction tx in transactions)
                     Console.WriteLine($"{tx.Hash} {tx.GetType().Name}");
