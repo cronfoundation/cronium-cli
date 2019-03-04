@@ -6,7 +6,7 @@
 
     "AddressVersion": 23,
 
-    "SecondsPerBlock": 1, 
+    "SecondsPerBlock": 15,
 
     "LowPriorityThreshold": 0.001,
 
