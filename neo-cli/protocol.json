@@ -1,59 +1,28 @@
 {
-
   "ProtocolConfiguration": {
-
     "Magic": 67827978,
-
     "AddressVersion": 23,
-
     "SecondsPerBlock": 15,
-
     "LowPriorityThreshold": 0.001,
-
     "StandbyValidators": [
-
       "035d64f7ff9a02d7c0f8c11977ac04cc82c7ba1fb7d7932b926e561cdee11fe402",
-
       "0266fad048f713b12cf54008bf73e4310b70bdb049873c9126008e512f167b2612",
-
       "0326ab6643f8b687d5b2b2a6fb5d593c4a6e35cf0f91c80efaf4c87590f872c70b",
-
       "021b0ca082ebc1452c10e794d18ad6c78345ff0b00777a5b842cfa925f3d3b72c4"
-
     ],
 
     "SeedList": [
-
-      "159.69.91.74:10313",
-
-      "159.69.91.74:10323",
-
-      "95.216.216.41:10333",
-
-      "95.216.216.41:10343",
-
-      "http://seed1.cron.global:10333",
-
-      "http://seed2.cron.global:10333",
-
-      "http://seed3.cron.global:10333",
-
-      "http://seed4.cron.global:10333"
-
+      "seed1.cron.global:10333",
+      "seed2.cron.global:10333",
+      "seed3.cron.global:10333",
+      "seed4.cron.global:10333",
+      "seed5.cron.global:10333"
     ],
-
     "SystemFee": {
-
       "EnrollmentTransaction": 1000,
-
       "IssueTransaction": 500,
-
       "PublishTransaction": 500,
-
       "RegisterTransaction": 10000
-
     }
-
   }
-
 }
