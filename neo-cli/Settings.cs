@@ -48,6 +48,7 @@ namespace Neo
         public ushort WsPort { get; }
         public int MinDesiredConnections { get; }
         public int MaxConnections { get; }
+        public int MaxConnectionsPerAddress { get; }
 
         public P2PSettings(IConfigurationSection section)
         {
@@ -55,6 +56,7 @@ namespace Neo
             this.WsPort = ushort.Parse(section.GetSection("WsPort").Value);
             this.MinDesiredConnections = section.GetValue("MinDesiredConnections", Peer.DefaultMinDesiredConnections);
             this.MaxConnections = section.GetValue("MaxConnections", Peer.DefaultMaxConnections);
+            this.MaxConnectionsPerAddress = section.GetValue("MaxConnectionsPerAddress", 3);
         }
     }
 
@@ -64,6 +66,7 @@ namespace Neo
         public ushort Port { get; }
         public string SslCert { get; }
         public string SslCertPassword { get; }
+        public Fixed8 MaxGasInvoke { get; }
 
         public RPCSettings(IConfigurationSection section)
         {
@@ -71,6 +74,7 @@ namespace Neo
             this.Port = ushort.Parse(section.GetSection("Port").Value);
             this.SslCert = section.GetSection("SslCert").Value;
             this.SslCertPassword = section.GetSection("SslCertPassword").Value;
+            this.MaxGasInvoke = Fixed8.Parse(section.GetValue("MaxGasInvoke", "0"));
         }
     }
 
