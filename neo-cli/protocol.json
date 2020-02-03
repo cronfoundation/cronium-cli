@@ -16,7 +16,11 @@
       "seed2.cron.global:10333",
       "seed3.cron.global:10333",
       "seed4.cron.global:10333",
-      "seed5.cron.global:10333"
+      "seed5.cron.global:10333",
+      "seed6.cron.global:10333",
+      "seed7.cron.global:10333",
+      "seed8.cron.global:10333",
+      "seed9.cron.global:10333"
     ],
     "SystemFee": {
       "EnrollmentTransaction": 1000,
