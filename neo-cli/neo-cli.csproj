@@ -1,18 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   
   <PropertyGroup>
-    <Copyright>2016-2019 The Neo Project</Copyright>
+    <Copyright>2018-2020 CRON Foundation, 2016-2020 The Neo Project</Copyright>
     <AssemblyTitle>Neo.CLI</AssemblyTitle>
     <Version>2.10.3</Version>
-    <Authors>The Neo Project</Authors>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Authors>CRON Foundation, The Neo Project</Authors>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <AssemblyName>neo-cli</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>Neo.CLI</PackageId>
     <RootNamespace>Neo</RootNamespace>
-    <Company>The Neo Project</Company>
+    <Company>CRON Foundation, The Neo Project</Company>
     <Product>Neo.CLI</Product>
     <Description>Neo.CLI</Description>
+    <PackageProjectUrl>https://github.com/cronfoundation/neo-cli</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">

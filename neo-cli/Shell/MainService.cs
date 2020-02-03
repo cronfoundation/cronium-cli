@@ -34,8 +34,8 @@ namespace Neo.Shell
         private NeoSystem system;
         private WalletIndexer indexer;
 
-        protected override string Prompt => "neo";
-        public override string ServiceName => "NEO-CLI";
+        protected override string Prompt => "cron";
+        public override string ServiceName => "CRON-CLI";
 
         private WalletIndexer GetIndexer()
         {
