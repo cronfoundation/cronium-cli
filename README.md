@@ -1,8 +1,8 @@
 <p align="center">
-<a href="https://neo.org/">
+<a href="https://cron.global/">
       <img
-      src="https://neo3.azureedge.net/images/logo%20files-dark.svg"
-      width="250px" alt="neo-logo">
+      src="https://cryptocean.io/img/logo.svg"
+      width="150px" alt="neo-logo">
   </a>
 </p>
 
