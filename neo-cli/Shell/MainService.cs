@@ -1257,7 +1257,7 @@ namespace Neo.Shell
                     wallet: Program.Wallet,
                     sslCert: Settings.Default.RPC.SslCert,
                     password: Settings.Default.RPC.SslCertPassword,
-                    maxGasInvoke: Settings.Default.RPC.MaxGasInvoke);
+                    extraGasInvoke: Settings.Default.RPC.MaxGasInvoke);
             }
         }
 
