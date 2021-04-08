@@ -1,6 +1,6 @@
 ﻿using System.ServiceProcess;
 
-namespace Neo.Services
+namespace Cron.CLI.Services
 {
     internal class ServiceProxy : ServiceBase
     {

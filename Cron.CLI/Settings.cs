@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Neo.Network.P2P;
+using Cron.Network.P2P;
 using System.Net;
 
-namespace Neo
+namespace Cron.CLI
 {
     internal class Settings
     {

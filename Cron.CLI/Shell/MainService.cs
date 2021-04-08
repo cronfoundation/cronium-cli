@@ -1,19 +1,19 @@
 using Akka.Actor;
-using Neo.Consensus;
-using Neo.IO;
-using Neo.IO.Json;
-using Neo.Ledger;
-using Neo.Network.P2P;
-using Neo.Network.P2P.Payloads;
-using Neo.Persistence;
-using Neo.Persistence.LevelDB;
-using Neo.Plugins;
-using Neo.Services;
-using Neo.SmartContract;
-using Neo.VM;
-using Neo.Wallets;
-using Neo.Wallets.NEP6;
-using Neo.Wallets.SQLite;
+using Cron.Consensus;
+using Cron.IO;
+using Cron.IO.Json;
+using Cron.Ledger;
+using Cron.Network.P2P;
+using Cron.Network.P2P.Payloads;
+using Cron.Persistence;
+using Cron.Persistence.LevelDB;
+using Cron.Plugins;
+using Cron.CLI.Services;
+using Cron.SmartContract;
+using Cron.VM;
+using Cron.Wallets;
+using Cron.Wallets.NEP6;
+using Cron.Wallets.SQLite;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,15 +23,15 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using ECCurve = Neo.Cryptography.ECC.ECCurve;
-using ECPoint = Neo.Cryptography.ECC.ECPoint;
+using ECCurve = Cron.Cryptography.ECC.ECCurve;
+using ECPoint = Cron.Cryptography.ECC.ECPoint;
 
-namespace Neo.Shell
+namespace Cron.CLI.Shell
 {
     internal class MainService : ConsoleServiceBase
     {
         private LevelDBStore store;
-        private NeoSystem system;
+        private CronSystem system;
         private WalletIndexer indexer;
 
         protected override string Prompt => "cron";
@@ -282,7 +282,7 @@ namespace Neo.Shell
             {
                 scriptHash = script.ToScriptHash();
 
-                sb.EmitSysCall("Neo.Contract.Create", script, parameterList, returnType, properties,
+                sb.EmitSysCall("Cron.Contract.Create", script, parameterList, returnType, properties,
                     contractName, contractVersion, contractAuthor, contractEmail, contractDescription);
                 return new InvocationTransaction
                 {
@@ -984,7 +984,7 @@ namespace Neo.Shell
             UIntBase assetId;
             switch (args[1].ToLower())
             {
-                case "neo":
+                case "cron":
                 case "ans":
                     assetId = Blockchain.GoverningToken.Hash;
                     break;
@@ -1191,7 +1191,7 @@ namespace Neo.Shell
                 UInt256 assetId;
                 switch (args[2].ToLower())
                 {
-                    case "neo":
+                    case "cron":
                     case "ans":
                         assetId = Blockchain.GoverningToken.Hash;
                         break;
@@ -1228,7 +1228,7 @@ namespace Neo.Shell
                         break;
                 }
             store = new LevelDBStore(Path.GetFullPath(Settings.Default.Paths.Chain));
-            system = new NeoSystem(store);
+            system = new CronSystem(store);
             system.StartNode(
                 port: Settings.Default.P2P.Port,
                 wsPort: Settings.Default.P2P.WsPort,
@@ -1350,7 +1350,7 @@ namespace Neo.Shell
                 }
             }
 
-            Console.WriteLine($"Install successful, please restart neo-cli.");
+            Console.WriteLine($"Install successful, please restart Cron.CLI");
             return true;
         }
 
@@ -1376,7 +1376,7 @@ namespace Neo.Shell
             }
 
             File.Delete(Path.Combine("Plugins", $"{pluginName}.dll"));
-            Console.WriteLine($"Uninstall successful, please restart neo-cli.");
+            Console.WriteLine($"Uninstall successful, please restart ncron-cli");
             return true;
         }
 

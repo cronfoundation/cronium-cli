@@ -1,23 +1,23 @@
 using Akka.Actor;
-using Neo.Ledger;
-using Neo.Network.P2P.Payloads;
-using Neo.Persistence;
-using Neo.SmartContract;
-using Neo.Wallets;
+using Cron.Ledger;
+using Cron.Network.P2P.Payloads;
+using Cron.Persistence;
+using Cron.SmartContract;
+using Cron.Wallets;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Neo.Shell
+namespace Cron.CLI.Shell
 {
 
     public class Coins
     {
         private Wallet current_wallet;
-        private NeoSystem system;
+        private CronSystem system;
         public static int MAX_CLAIMS_AMOUNT = 50;
 
-        public Coins(Wallet wallet, NeoSystem system)
+        public Coins(Wallet wallet, CronSystem system)
         {
             this.current_wallet = wallet;
             this.system = system;

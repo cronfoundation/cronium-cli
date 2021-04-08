@@ -8,7 +8,7 @@ using System.Security;
 using System.ServiceProcess;
 using System.Text;
 
-namespace Neo.Services
+namespace Cron.CLI.Services
 {
     public abstract class ConsoleServiceBase
     {

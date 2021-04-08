@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Reflection;
 
-namespace Neo
+namespace Cron.CLI
 {
     internal static class Helper
     {

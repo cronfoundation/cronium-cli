@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Neo" Version="2.10.2" />
-    <ProjectReference Include="../neo-cli/neo-cli.csproj" />
+    <PackageReference Include="Cron" Version="2.10.2" />
+    <ProjectReference Include="../Cron.CLI/nCron.CLI.csproj" />
   </ItemGroup>
 
 </Project>

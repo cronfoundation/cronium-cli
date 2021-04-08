@@ -1,9 +1,9 @@
-﻿using Neo.Shell;
-using Neo.Wallets;
+﻿using Cron.CLI.Shell;
+using Cron.Wallets;
 using System;
 using System.IO;
 
-namespace Neo
+namespace Cron.CLI
 {
     static class Program
     {

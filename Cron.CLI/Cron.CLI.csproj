@@ -1,19 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   
   <PropertyGroup>
-    <Copyright>2018-2020 CRON Foundation, 2016-2020 The Neo Project</Copyright>
-    <AssemblyTitle>Neo.CLI</AssemblyTitle>
+    <Copyright>2018-2020 CRON Foundation, 2016-2020 The Cron Project</Copyright>
+    <AssemblyTitle>Cron.CLI</AssemblyTitle>
     <Version>2.10.3</Version>
-    <Authors>CRON Foundation, The Neo Project</Authors>
+    <Authors>CRON Foundation, The Cron Project</Authors>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AssemblyName>neo-cli</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>Neo.CLI</PackageId>
-    <RootNamespace>Neo</RootNamespace>
-    <Company>CRON Foundation, The Neo Project</Company>
-    <Product>Neo.CLI</Product>
-    <Description>Neo.CLI</Description>
+    <PackageId>Cron.CLI</PackageId>
+    <RootNamespace>Cron.CLI</RootNamespace>
+    <Company>CRON Foundation, The Cron Project</Company>
+    <Product>Cron.CLI</Product>
+    <Description>Cron.CLI</Description>
     <PackageProjectUrl>https://github.com/cronfoundation/neo-cli</PackageProjectUrl>
+    <AssemblyName>Cron.CLI</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CRONIUM" Version="2.12.4" />
+    <PackageReference Include="CRONIUM" Version="2.12.6-dev" />
     <PackageReference Include="System.ServiceProcess.ServiceController" Version="4.5.0" />
   </ItemGroup>
 

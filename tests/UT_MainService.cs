@@ -1,22 +1,22 @@
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Neo.Plugins;
-using Neo.Network.P2P.Payloads;
-using Neo;
-using Neo.Persistence;
-//using Settings = Neo.Plugins.Settings;
+using Cron.Plugins;
+using Cron.Network.P2P.Payloads;
+using Cron;
+using Cron.Persistence;
+//using Settings = Cron.Plugins.Settings;
 using System.Collections.Generic;
-using Neo.Cryptography;
+using Cron.Cryptography;
 using System.Numerics;
 using System.Collections;
 using System.Linq;
 using System;
 using Moq;
-// neo-cli
-using Neo.Shell;
-using Neo.SmartContract;
+// Cron.CLI
+using Cron.Shell;
+using Cron.SmartContract;
 
-namespace NeoCli.UnitTests
+namespace Cron.CLI.UnitTests
 {
     [TestClass]
     public class UT_MainService
