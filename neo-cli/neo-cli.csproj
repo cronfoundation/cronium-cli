@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CRONIUM" Version="2.12.3" />
+    <PackageReference Include="CRONIUM" Version="2.12.7-dev" />
     <PackageReference Include="System.ServiceProcess.ServiceController" Version="4.5.0" />
   </ItemGroup>
 

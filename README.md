@@ -1,8 +1,8 @@
 <p align="center">
-<a href="https://cron.global/">
+<a href="https://cron.global">
       <img
       src="https://cryptocean.io/img/logo.svg"
-      width="150px" alt="neo-logo">
+      width="250px" alt="cron-logo">
   </a>
 </p>
 
