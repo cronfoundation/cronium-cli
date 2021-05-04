@@ -1,0 +1,8 @@
+﻿{
+  "PluginConfiguration": {
+    "DBPath": "SystemAssetBalanceData",
+    "TrackHistory": true,
+    "TrackUnclaimed": true,
+    "MaxResults": 1000
+  }
+}
