@@ -27,7 +27,7 @@ WORKDIR /opt/cronium-cli
 
 # Activate plugins
 ADD Plugins /opt/cronium-cli/Plugins 
-RUN cp ApplicationLogs.dll CoreMetrics.dll ImportBlocks.dll RpcNep5Tracker.dll \ 
+RUN cp SyncBlocks.dll ApplicationLogs.dll CoreMetrics.dll ImportBlocks.dll RpcNep5Tracker.dll \ 
     RpcSecurity.dll RpcSystemAssetTracker.dll RpcWallet.dll StatesDumper.dll \ 
     /opt/cronium-cli/Plugins/
 
