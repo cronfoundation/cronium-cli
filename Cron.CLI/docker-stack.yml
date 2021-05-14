@@ -19,7 +19,7 @@ services:
     networks: 
       - cryptocean-network
     ports:
-      - ${NODE_RPC_PORT-10332:10332}
+      - ${NODE_RPC_PORT:-10332:10332}
       - ${NODE_P2P_PORT:-10333:10333}
       - ${NODE_WS_PORT:-10334:10334}
     logging:
