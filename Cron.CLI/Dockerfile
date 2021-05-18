@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y \
     wget \ 
     expect \ 
     zip \ 
-    nano 
+    nano \
+	net-tools
  
 # Copy project data 
 RUN mkdir -p /tmp/cronium-git-cli /opt/cronium-cli 
