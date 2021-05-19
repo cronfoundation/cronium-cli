@@ -1217,7 +1217,7 @@ namespace Cron.CLI.Shell
 
         protected internal override void OnStart(string[] args)
         {
-            bool useRPC = false;
+            var useRPC = false;
             for (int i = 0; i < args.Length; i++)
                 switch (args[i])
                 {

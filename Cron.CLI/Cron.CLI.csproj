@@ -29,8 +29,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CRONIUM" Version="2.12.6-dev" />
+    <PackageReference Include="CRON.Plugin.ApplicationLogs" Version="2.12.3" />
+    <PackageReference Include="CRON.Plugin.CoreMetrics" Version="2.12.3" />
+    <PackageReference Include="CRON.Plugin.ImportBlocks" Version="2.12.3" />
+    <PackageReference Include="CRON.Plugin.RpcNep5Tracker" Version="2.12.3" />
+    <PackageReference Include="CRON.Plugin.RpcSecurity" Version="2.12.3" />
+    <PackageReference Include="CRON.Plugin.RpcSystemAssetTracker" Version="2.12.4" />
+    <PackageReference Include="CRON.Plugin.RpcWallet" Version="2.12.3" />
+    <PackageReference Include="CRON.Plugin.SimplePolicy" Version="2.12.3" />
+    <PackageReference Include="CRON.Plugin.StatesDumper" Version="2.12.3" />
+    <PackageReference Include="CRON.Plugin.SyncBlocks" Version="1.0.4" />
+    <PackageReference Include="CRONIUM" Version="2.14.4-dev" />
     <PackageReference Include="System.ServiceProcess.ServiceController" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Plugins\SyncBlocks" />
   </ItemGroup>
 
 </Project>
