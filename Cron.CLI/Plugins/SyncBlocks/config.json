@@ -1,4 +1,6 @@
 ﻿{
-  "ImportDirectory" : "data/Import",
-  "ExportDirectory" : "data/Export"
+  "PluginConfiguration": {
+    "ImportDirectory": "data/Import",
+    "ExportDirectory": "data/Export"
+  }
 }
