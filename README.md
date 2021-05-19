@@ -15,6 +15,9 @@
   </a>    
 </p>
 
+# Attention! Read it please.
+This is new version of readme.md. Now it is in writing stage, draft mode. Please contact support for your questions.
+
 # Prerequisites
 
 * setup docker environment
