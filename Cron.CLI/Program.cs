@@ -2,6 +2,9 @@
 using Cron.Wallets;
 using System;
 using System.IO;
+using Cron.CLI.Logging;
+using Microsoft.Extensions.Configuration;
+using Serilog;
 
 namespace Cron.CLI
 {
@@ -30,7 +33,16 @@ namespace Cron.CLI
             var bufferSize = 1024 * 67 + 128;
             Stream inputStream = Console.OpenStandardInput(bufferSize);
             Console.SetIn(new StreamReader(inputStream, Console.InputEncoding, false, bufferSize));
-            var mainService = new MainService();
+            
+            var config = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("config.json", true)
+                .Build();
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(config)
+                .CreateLogger();
+            var cronLogger = new CronLogger(Log.Logger);
+            var mainService = new MainService(cronLogger);
             mainService.Run(args);
         }
 

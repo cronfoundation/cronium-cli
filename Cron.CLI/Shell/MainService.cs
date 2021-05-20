@@ -23,6 +23,7 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using Cron.Interface;
 using ECCurve = Cron.Cryptography.ECC.ECCurve;
 using ECPoint = Cron.Cryptography.ECC.ECPoint;
 
@@ -37,6 +38,13 @@ namespace Cron.CLI.Shell
         protected override string Prompt => "cron";
         public override string ServiceName => "CRON-CLI";
 
+        private readonly ICronLogger _logger;
+
+        public MainService(ICronLogger logger)
+        {
+            _logger = logger;
+        }
+        
         private WalletIndexer GetIndexer()
         {
             if (indexer is null)
@@ -1228,7 +1236,7 @@ namespace Cron.CLI.Shell
                         break;
                 }
             store = new LevelDBStore(Path.GetFullPath(Settings.Default.Paths.Chain));
-            system = new CronSystem(store);
+            system = new CronSystem(store, _logger);
             system.StartNode(
                 port: Settings.Default.P2P.Port,
                 wsPort: Settings.Default.P2P.WsPort,
