@@ -1,4 +1,11 @@
 ﻿{
+  "Serilog": {
+    "Using":  [ "Serilog.Sinks.File" ],
+    "MinimumLevel": "Debug",
+    "WriteTo": [
+      { "Name": "File", "Args": { "path": "data/Log/cron-cli.log", "rollingInterval": "Day" } }
+    ]
+  },
   "ApplicationConfiguration": {
     "Paths": {
       "Chain": "data/Chain_{0}",
