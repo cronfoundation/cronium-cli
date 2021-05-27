@@ -305,3 +305,8 @@ All notable changes to this project will be documented in this file.
 ## [2.0.0] - 2017-07-13
 ### Changed
 - Rebrand from AntShares to NEO.
+
+## [4.2.0] - 2021 week 20
+### Changed
+* For Invocation Transaction, an asset block has been added so that the cron tracker will correctly add assets when synchronizing blocks
+* Added logging for Cron.CLI to file
