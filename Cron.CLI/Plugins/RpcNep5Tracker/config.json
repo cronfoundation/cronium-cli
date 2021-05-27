@@ -1,6 +1,6 @@
 ﻿{
   "PluginConfiguration": {
-    "DBPath": "Nep5BalanceData",
+    "DBPath": "data/Nep5BalanceData",
     "TrackHistory" : true,
     "RecordNullAddressHistory": false,
     "MaxResults" : 1000
