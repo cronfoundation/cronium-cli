@@ -310,3 +310,10 @@ All notable changes to this project will be documented in this file.
 ### Changed
 * For Invocation Transaction, an asset block has been added so that the cron tracker will correctly add assets when synchronizing blocks
 * Added logging for Cron.CLI to file
+
+## [4.3.0] - 2021 week 21,22
+### Changed
+* Improved RpcSystemAssetTracker plugin stability https://github.com/cronfoundation/cronium-plugins
+### Added
+* Added Fee for transactions in UI https://github.com/cronfoundation/cronium-tracker 
+* Added instruction for setup node from new official dockerhub image
