@@ -29,7 +29,7 @@ cp ./cronium-cli/Cron.CLI/docker-stack.yml /opt/cryptocean/cryptocean-cronium-cl
 cd /opt/cryptocean/cryptocean-cronium-cli-slave-1
 ```
 
-## Setings for node
+## Settings for node
 ```
 export DOCKER_NAME=cryptocean-cronium-cli-slave-1.latest
 export DOCKER_IMAGE=cronglobal/cronium-cli:latest
@@ -47,8 +47,9 @@ export NODE_ARGS=--rpc
 
 
 # Logging
-Check
-`docker logs -f <dockername>`
+Logs from docker broadcast to the destination  folder: `/opt/cryptocean/cryptocean-cronium-cli`
+Then check last 10 (or you can specify more) line of logs:
+`tail -10 data/Log/cron-cli<yyyymmdd>.log`
 
 ## Bootstrapping the network.
 1. Download Chain.data.zip
