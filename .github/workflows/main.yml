@@ -21,7 +21,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Check Out Repo 
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Login to Docker Hub
         uses: docker/login-action@v1
@@ -38,7 +38,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/cronium-cli:${{ GITHUB_REF }}
+          tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/cronium-cli:$GITHUB_REF
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
       - name: Image digest
