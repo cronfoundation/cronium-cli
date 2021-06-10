@@ -39,7 +39,7 @@
     <PackageReference Include="CRON.Plugin.SimplePolicy" Version="2.12.4" />
     <PackageReference Include="CRON.Plugin.StatesDumper" Version="2.12.4" />
     <PackageReference Include="CRON.Plugin.SyncBlocks" Version="1.0.6" />
-    <PackageReference Include="CRONIUM" Version="2.14.6-dev" />
+    <PackageReference Include="CRONIUM" Version="2.14.7-dev" />
     <PackageReference Include="Serilog" Version="2.10.0" />
     <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
     <PackageReference Include="System.ServiceProcess.ServiceController" Version="4.5.0" />
