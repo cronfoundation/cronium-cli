@@ -34,7 +34,7 @@
     <PackageReference Include="CRON.Plugin.ImportBlocks" Version="2.12.4" />
     <PackageReference Include="CRON.Plugin.RpcNep5Tracker" Version="2.12.4" />
     <PackageReference Include="CRON.Plugin.RpcSecurity" Version="2.12.4" />
-    <PackageReference Include="CRON.Plugin.RpcSystemAssetTracker" Version="2.12.5" />
+    <PackageReference Include="CRON.Plugin.RpcSystemAssetTracker" Version="2.12.6" />
     <PackageReference Include="CRON.Plugin.RpcWallet" Version="2.12.4" />
     <PackageReference Include="CRON.Plugin.SimplePolicy" Version="2.12.4" />
     <PackageReference Include="CRON.Plugin.StatesDumper" Version="2.12.4" />
