@@ -38,10 +38,10 @@ namespace Cron.CLI
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("config.json", true)
                 .Build();
-            // Log.Logger = new LoggerConfiguration()
-            //     .ReadFrom.Configuration(config)
-            //     .CreateLogger();
-            // var cronLogger = new CronLogger(Log.Logger);
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(config)
+                .CreateLogger();
+            var cronLogger = new CronLogger(Log.Logger);
             var mainService = new MainService(null);
             mainService.Run(args);
         }
