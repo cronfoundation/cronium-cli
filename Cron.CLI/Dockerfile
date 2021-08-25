@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.2-sdk 
+FROM mcr.microsoft.com/dotnet/sdk:3.1
  
 # Install dependencies: 
 RUN apt-get update && apt-get install -y \ 
