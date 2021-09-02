@@ -42,7 +42,7 @@ namespace Cron.CLI
                 .ReadFrom.Configuration(config)
                 .CreateLogger();
             var cronLogger = new CronLogger(Log.Logger);
-            var mainService = new MainService(null);
+            var mainService = new MainService(cronLogger);
             mainService.Run(args);
         }
 

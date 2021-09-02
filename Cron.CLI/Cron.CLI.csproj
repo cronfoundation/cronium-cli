@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   
   <PropertyGroup>
-    <Copyright>2018-2020 CRON Foundation, 2016-2020 The Cron Project</Copyright>
+    <Copyright>2018-2021 CRON Foundation, 2016-2021 The Cron Project</Copyright>
     <AssemblyTitle>Cron.CLI</AssemblyTitle>
     <Version>2.10.3</Version>
     <Authors>CRON Foundation, The Cron Project</Authors>
@@ -14,6 +14,8 @@
     <Description>Cron.CLI</Description>
     <PackageProjectUrl>https://github.com/cronfoundation/neo-cli</PackageProjectUrl>
     <AssemblyName>Cron.CLI</AssemblyName>
+    <PackageVersion>2.15.3</PackageVersion>
+    <AssemblyVersion>2.15.3</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -29,17 +31,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CRON.Plugin.ApplicationLogs" Version="2.12.4" />
-    <PackageReference Include="CRON.Plugin.CoreMetrics" Version="2.12.4" />
-    <PackageReference Include="CRON.Plugin.ImportBlocks" Version="2.12.4" />
-    <PackageReference Include="CRON.Plugin.RpcNep5Tracker" Version="2.12.4" />
-    <PackageReference Include="CRON.Plugin.RpcSecurity" Version="2.12.4" />
-    <PackageReference Include="CRON.Plugin.RpcSystemAssetTracker" Version="2.12.7" />
-    <PackageReference Include="CRON.Plugin.RpcWallet" Version="2.12.4" />
-    <PackageReference Include="CRON.Plugin.SimplePolicy" Version="2.12.4" />
-    <PackageReference Include="CRON.Plugin.StatesDumper" Version="2.12.4" />
-    <PackageReference Include="CRON.Plugin.SyncBlocks" Version="1.0.6" />
-    <PackageReference Include="CRONIUM" Version="2.15.1" />
+    <PackageReference Include="CRON.Plugin.ApplicationLogs" Version="2.15.2" />
+    <PackageReference Include="CRON.Plugin.CoreMetrics" Version="2.15.2" />
+    <PackageReference Include="CRON.Plugin.ImportBlocks" Version="2.15.2" />
+    <PackageReference Include="CRON.Plugin.RpcNep5Tracker" Version="2.15.2" />
+    <PackageReference Include="CRON.Plugin.RpcSecurity" Version="2.15.2" />
+    <PackageReference Include="CRON.Plugin.RpcSystemAssetTracker" Version="2.15.2" />
+    <PackageReference Include="CRON.Plugin.RpcWallet" Version="2.15.2" />
+    <PackageReference Include="CRON.Plugin.SimplePolicy" Version="2.15.2" />
+    <PackageReference Include="CRON.Plugin.StatesDumper" Version="2.15.2" />
+    <PackageReference Include="CRON.Plugin.SyncBlocks" Version="2.15.2" />
+    <PackageReference Include="CRONIUM" Version="2.15.3" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.18" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.18" />
     <PackageReference Include="Serilog" Version="2.10.0" />
