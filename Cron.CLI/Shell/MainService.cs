@@ -992,11 +992,11 @@ namespace Cron.CLI.Shell
             UIntBase assetId;
             switch (args[1].ToLower())
             {
-                case "cron":
+                case "cronium":
                 case "ans":
                     assetId = Blockchain.GoverningToken.Hash;
                     break;
-                case "gas":
+                case "cron":
                 case "anc":
                     assetId = Blockchain.UtilityToken.Hash;
                     break;
@@ -1199,11 +1199,11 @@ namespace Cron.CLI.Shell
                 UInt256 assetId;
                 switch (args[2].ToLower())
                 {
-                    case "cron":
+                    case "cronium":
                     case "ans":
                         assetId = Blockchain.GoverningToken.Hash;
                         break;
-                    case "gas":
+                    case "cron":
                     case "anc":
                         assetId = Blockchain.UtilityToken.Hash;
                         break;
